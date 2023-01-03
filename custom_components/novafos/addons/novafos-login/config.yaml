@@ -1,10 +1,10 @@
 name: "Novafos login"
 description: "An add-on to use Selenium web-driver to login to the Novafos website."
 version: "1.0.0"
-slug: "Novafos Login-driver"
+slug: "novafos-login-driver"
 init: false
 arch:
-  - amd64
+  - aarch64
 ports:
   5000/tcp: 5000
 startup: services

@@ -48,6 +48,7 @@ def return_images_as_stream(filenames):
 # Chrome seems to perform a lot better
 executable_path=r'/usr/bin/chromedriver'
 options = webdriver.ChromeOptions()
+options.headless = True
 spath="/home/seluser/"
 
 ## Setup the Flask endpoint(s)

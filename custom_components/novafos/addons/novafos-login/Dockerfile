@@ -2,16 +2,9 @@
 #FROM $BUILD_FROM
 
 #FROM selenium/standalone-firefox:4.5.0
-FROM selenium/standalone-chrome:4.5.0
+FROM seleniarm/standalone-chromium:4.7.2
 
 USER root
-
-#================================================
-# Customize sources for apt-get
-#================================================
-RUN  echo "deb http://archive.ubuntu.com/ubuntu focal main universe\n" > /etc/apt/sources.list \
-  && echo "deb http://archive.ubuntu.com/ubuntu focal-updates main universe\n" >> /etc/apt/sources.list \
-  && echo "deb http://security.ubuntu.com/ubuntu focal-security main universe\n" >> /etc/apt/sources.list
 
 # No interactive frontend during docker build
 ENV DEBIAN_FRONTEND=noninteractive \
